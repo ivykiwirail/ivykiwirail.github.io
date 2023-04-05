@@ -29,6 +29,8 @@
           <select class="form-select" id="category" onchange="toggleCategoryInput()">
             <option value="">Please select the category</option>
             <option value="PM">PM</option>
+            <option value="asset">Asset</option>
+            <option value="location">Location</option>
             <option value="Workorder">Workorder</option>
             <option value="servicerequest">Service Request</option>
             <option value="inspection">Inspection</option>
@@ -44,9 +46,10 @@
         <div class="col-sm-9">
           <select class="form-select" id="issueType" onchange="toggleIssueInput()">
             <option value="">Please select the issue</option>
-            <option value="UPDATE">Update</option>
+            <option value="UPDATE">Update / Amend </option>
             <option value="CREATE">Create</option>
-            <option value="DELETE">Delete</option>
+            <option value="DELETE">Delete / Mothball</option>
+            <option value="DISPOSE">Dispose</option>
             <option value="otherissue">Other</option>
           </select>
           <div class="mt-3 d-none" id="issueInput">
