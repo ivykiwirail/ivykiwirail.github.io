@@ -18,13 +18,19 @@
         </div>
       </div>
       <div class="row mb-3">
-        <label for="summary" class="col-sm-3 col-form-label">Summarise the issue</label>
+        <label for="requester" class="col-sm-3 col-form-label">Email</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="summary" placeholder="Enter summary">
+          <input type="text" class="form-control" id="requesteremail" placeholder="Enter email">
         </div>
       </div>
       <div class="row mb-3">
-        <label for="category" class="col-sm-3 col-form-label">Category</label>
+        <label for="summary" class="col-sm-3 col-form-label">Subject</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="summary" placeholder="Enter subject">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="category" class="col-sm-3 col-form-label">Data Category</label>
         <div class="col-sm-9">
           <select class="form-select" id="category" onchange="toggleCategoryInput()">
             <option value="">Please select the category</option>
@@ -42,7 +48,7 @@
         </div>
       </div>
       <div class="row mb-3">
-        <label for="issueType" class="col-sm-3 col-form-label">Issue type</label>
+        <label for="issueType" class="col-sm-3 col-form-label">Data Action</label>
         <div class="col-sm-9">
           <select class="form-select" id="issueType" onchange="toggleIssueInput()">
             <option value="">Please select the issue</option>
@@ -58,7 +64,7 @@
         </div>
       </div>
       <div class="row mb-3">
-        <label for="details" class="col-sm-3 col-form-label">Please add any additional detail that may help us solve the issue</label>
+        <label for="details" class="col-sm-3 col-form-label">Please add any additional information</label>
         <div class="col-sm-9">
           <textarea class="form-control" id="details" rows="5" placeholder="Enter details"></textarea>
         </div>
